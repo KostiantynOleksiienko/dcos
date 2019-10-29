@@ -3,7 +3,7 @@
 # windows uses the default backslash for filenames making filepaths hard
 # to read
 
-FROM microsoft/windowsservercore:1809
+FROM mcr.microsoft.com/windows/servercore:1809
 
 # Default to PowerShell if no other command specified.
 CMD ["powershell.exe", "-NoLogo", "-ExecutionPolicy", "Bypass"]
